@@ -1,0 +1,13 @@
+cancas
+var chess = document.getElementsByTagName("canvas");
+var context = chess.getContext("2d");
+
+context.moveTo(x,y);
+context.lineTo(x,y);
+context.stroke();
+
+var logo = new Image();
+logo.src = "/";
+logo.onload = function(){
+	logo.drawImage(logo,0,0,450,450);
+}
